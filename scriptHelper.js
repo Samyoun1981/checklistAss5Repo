@@ -126,33 +126,6 @@ module.exports.myFetch = myFetch;
 
 
 
-        // else if (validateInput(fuelLevel) === 'Not a Number' || validateInput(cargoLevel) === 'Not a Number') {
-        //     alert(`Please enter numerical values for Fuel Level and Cargo Mass`);
-        // } else if (validateInput(pilot)===`Is a Number`||validateInput(copilot)===`Is a Number`) {
-        //     alert('Please do not enter numbers for name of pilot or co-pilot');
-        // } else {
-
-       
-            //         fuelStatus.innerHTML = `Not enough fuel for journey`;
-            //         list.style.visibility = 'visible';
-            //         launchStatus.innerHTML = `Shuttle not ready for launch`;
-            //         launchStatus.style.color = `red`;
-            //     } else if (Number(cargoLevel) > 10000) {
-            //         cargoStatus.innerHTML = `Cargo too heavy for takeoff`;
-            //         list.style.visibility = `visible`;
-            //         launchStatus.innerHTML = `Shuttle not ready for launch`;
-            //         launchStatus.style.color = `red`;
-            //     } else if (Number(cargoLevel) < 10000 && Number(fuelLevel) > 10000) {
-            //         list.style.visibility = `visible`;
-            //         fuelStatus.innerHTML = `Enough fuel for journey`;
-            //         cargoStatus.innerHTML = `Cargo light enough for takeoff`;
-            //         launchStatus.innerHTML = `Shuttle ready for launch`;
-            //         launchStatus.style.color = `green`;
-            //     }
-            // }
-            
-
-
 
 // You also want to make sure that the user entered valid info for each of the fields. Valid information for the 
 // fields means that the user submits a value that is easily converted to the correct data type for our fellow engineers. 
@@ -171,4 +144,10 @@ module.exports.myFetch = myFetch;
 // cargo mass that is too large (more than 10,000 kilograms), change the list to visible with an updated cargo status stating that there is too much mass 
 // for the shuttle to take off. The text of launchStatus should also change to "Shuttle not ready for launch" and the color should change to red. If the 
 // shuttle is ready to launch, change the text of launchStatus to green and display "Shuttle is ready for launch".
-// 
+
+// In scriptHelper.js, you have three functions for this task: myFetch(), pickPlanet(), and addDestinationInfo(). First, review the 
+// comments in addDestinationInfo(). This is the format of the innerHTML for the missionTarget div, which you can locate using the document
+//  parameter of addDestinationInfo(). addDestinationInfo() does not need to return anything. pickPlanet() takes in one argument: a list 
+//  of planets. Using Math.random(), return one planet from the list with a randomly-selected index. myFetch() has some of the code 
+//  necessary for fetching planetary JSON, however, it is not complete. You need to add the URL and return response.json().
+// Now it is time to make use of these helper functions in script.js. We provided some of the code necessary.
